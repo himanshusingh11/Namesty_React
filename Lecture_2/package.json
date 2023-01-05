@@ -1,0 +1,26 @@
+{
+  "name": "nameste-react-live",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/himanshusingh11/Namesty_React.git"
+  },
+  "author": "Himanshu Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshusingh11/Namesty_React/issues"
+  },
+  "homepage": "https://github.com/himanshusingh11/Namesty_React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
