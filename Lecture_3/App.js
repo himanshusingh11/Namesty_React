@@ -37,8 +37,8 @@ const HeaderComponent = () => {
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//passing a react element inside the root.
-//generally we have only one root and one render method.
-// IMP: react  root will override everything and will display what is inside the render.
-root.render(heading); //this is for react element
+
+
+
+// root.render(heading); //this is for react element
 root.render(<HeaderComponent />); // this is for component
