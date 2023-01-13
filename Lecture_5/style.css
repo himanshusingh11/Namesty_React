@@ -38,3 +38,10 @@ display: flex;
   flex-direction: row;
   
 }
+.search-container{
+  padding: 0.5rem;
+  text-align: left;
+}
+.search-btn{
+  margin-left: .5rem;
+}
