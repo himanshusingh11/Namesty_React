@@ -1,0 +1,35 @@
+1. Is Jsx mandatory for React?
+Ans: No JSX is not mandatory.
+
+2. Is ES6 mandatory for React?
+Ans: Yes ES6 is mandatory.
+
+3.(TitleComponent) vs (<TitleComponent/> vs (<TitleComponent></TitleComponent>))?
+Ans:
+
+4.How to Write Comments in JSX?
+Ans:
+
+5.What is <React.Fragment> </React.Fragment> and <></>?
+Ans:
+
+6.What is Virtual DOM?
+Ans:
+
+7.What is Reconciliation in React?
+Ans:
+
+8. What is React Fiber?
+Ans:
+
+9.Why do we need keys in React ? When do we need keys in React ?
+Ans:
+
+10. Can we index as keys in React?
+Ans:
+
+11. What is props in React ? Ways to 
+Ans:
+
+12. What is a config Driven UI?
+Ans:
