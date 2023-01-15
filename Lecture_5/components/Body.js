@@ -13,12 +13,40 @@ const Body = () => {
   const [searchTxt,setSearchTxt] = useState("");
 
   useEffect(()=>{
-    if(searchTxt==''){
+    // if(searchTxt==''){
+      console.log("himan")
       setRestaurant(restrauList)
-    }
-  },[searchTxt,setRestaurant])
+    // }
+  },[searchTxt,restrauList]);
+   
+  useEffect(()=>{
+    getRestaurant();
+    // getUser();
+  },[])
 
 
+  async function  getRestaurant()  {
+  const data =  await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8466937&lng=80.94616599999999&page_type=DESKTOP_WEB_LISTING");
+  const json = await data.json();
+  console.log(json);
+  } 
+
+  // async function getUser() {
+  //   try {
+  
+  //     const response = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8466937&lng=80.94616599999999&page_type=DESKTOP_WEB_LISTING',{mode:'cors'});
+  
+  //     if (!response.ok) {
+  //       throw new Error(`Error! status: ${response.status}`);
+  //     }
+  
+  //     const result = await response.json();
+  //     console.log(result);
+  //     return result;
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
   
     return (
       <>
