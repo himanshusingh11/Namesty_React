@@ -43,3 +43,22 @@ React-DOM: React-DOM is a complimentary library to React which glues React to th
 mounting your application to the index.html file with ReactDOM.render().
 
 We’re using React and whenever we use methods like render() or findDOMNode() we’re using React-DOM.
+
+7. Difference Between react.development.js  vs react.production.js via CDN?
+react.developement.js is allows react to be available for developement only 
+while react.production.js is for minified & optimized production version of react 
+basically production build contains the minified versions of our code to load the code faster 
+
+8.Async vs Defer Atrributes 
+
+these are boolean attribute that are used with script tags to load the extenal script efficiently into our web page.
+
+
+In async attribute the html parsing goes on and simultaneouly  the asycn scripts are loaded and while execution the html parsing stops after the script finish its execution the html parsing continue.
+
+In Defer the html parsing does not stop and scripts are loaded in parallel and after the html parsing the scripts are executed.
+
+what to use When ?
+Async attribute does not gurantee the order of execution of scripts bu defer does.
+
+It is advised to use the defer attribute so that order of execution maintains and serves both of the purpose
