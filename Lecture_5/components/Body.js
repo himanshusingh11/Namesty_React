@@ -1,15 +1,14 @@
-import { restrauList } from "../constants";
 import ReasturantCard from "./ReasturantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
 
 const filterData = (searchTxt, restaurant) => {
-  return restaurant.filter((restra) => restra.data.name.includes(searchTxt));
+  searchTxt = searchTxt.toLowerCase();
+  return restaurant.filter((restra) => restra?.data?.name?.toLowerCase().includes(searchTxt));
 };
 
 const Body = () => {
-  // let searchTxt = "Chicken"
   const [allrestaurant, setAllRestaurant] = useState([]);
   const [filteredrestaurant, setFilteredRestaurant] = useState([]);
   const [searchTxt, setSearchTxt] = useState("");
@@ -49,8 +48,11 @@ const Body = () => {
   //     console.log(err);
   //   }
   // }
+  
 
-  return  allrestaurant.length===0?(<Shimmer/>):(
+  // if(filteredrestaurant?.length===0)
+  // return <h1>No restaurant matches the filter !!</h1>
+  return  allrestaurant?.length===0?(<Shimmer/>):(
     <>
       <div className="search-container">
         <input
@@ -71,11 +73,11 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {filteredrestaurant.map((restaurant) => {
+        {filteredrestaurant.length>0? filteredrestaurant.map((restaurant) => {
           return (
             <ReasturantCard {...restaurant.data} key={restaurant.data.id} />
           );
-        })}
+        }):<><h1>No Restaurants Found</h1></>}
       </div>
     </>
   );

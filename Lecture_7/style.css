@@ -45,3 +45,9 @@ display: flex;
 .search-btn{
   margin-left: .5rem;
 }
+
+.image-each-restaurant{
+  height:12rem;
+  width:16rem;
+  border-radius:1rem;
+}

@@ -9,14 +9,14 @@ import About from "../components/About";
 import Error from "../components/Error";
 import Contact from "../components/Contact";
 import Cart from "../components/Cart";
-// import Cart from "../components/Cart";
+import RestrauntMenu from "../components/RestrauntMenu";
+
 
 const AppLayout = () => {
   return (
     <> 
       <Header />
-      <Outlet/>
-      {/* <Body /> */}
+      <Outlet/> 
       <Footer />
     </>
   );
@@ -43,14 +43,13 @@ const appRouter = createBrowserRouter([
       path:"/cart",
       element:<Cart/>,
      },
+     {
+      path:"/restaurant/:id",
+      element:<RestrauntMenu/>
+     }
      
    ]
   },
-  // {
-
-  //   path:"/about",
-  //   element:<About/>
-  // },
 ]);
 
 
